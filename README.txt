@@ -1,3 +1,7 @@
-A Pen created at CodePen.io. You can find this one at https://codepen.io/lizink/pen/gzmqd.
+My website code.
+
+Working on it now.
+
+Idea base on [Codepen Project](https://codepen.io/lizink/pen/gzmqd).
 
  
