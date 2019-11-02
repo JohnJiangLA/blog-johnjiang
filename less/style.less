@@ -1,0 +1,91 @@
+@import url(https://fonts.googleapis.com/css?family=Alegreya+Sans:400,300,500);
+@import url(https://fonts.googleapis.com/css?family=Life+Savers:400,700);
+
+@font1: 'Life Savers', cursive;
+@font2: 'Alegreya Sans', sans-serif;
+
+html, body { 
+  margin: 0; padding: 0; 
+  width: 100%; height: 100%;
+  background: #000;
+  font-family: @font2;
+  overflow: hidden;
+}
+
+.rotate(@deg){
+ 	-webkit-transform: rotate(@deg);
+	-moz-transform: rotate(@deg);
+	-o-transform: rotate(@deg);
+	-ms-transform: rotate(@deg);
+	transform: rotate(@deg);
+}
+
+#accordian {
+  height: 100%;
+  overflow: hidden;
+  width: 120%;
+  margin-left: -5%;
+  > div {
+    height: 150%;
+    margin-top: -10%;
+    padding: 10% 5%;
+    width: 34.75%;
+    float: left;
+    color: #ccc;
+    .rotate(5deg);
+    h1 {
+      text-align: center; 
+      cursor: pointer; 
+      .rotate(-5deg); 
+      font: normal 75px/35px @font1;
+      margin-top: 20%;
+    }
+    h1.checked { margin-top: 5% !important; font-size: 45px;}
+    h1.small { font-size: 25px;}
+
+    > div { 
+      margin: 10px 5%; 
+      .rotate(-5deg); 
+      display: none;
+      font-size: 18px;
+    }   
+  }
+.about {
+	background: #4e256b; /* Old browsers */
+  background: -webkit-linear-gradient(top, #4e256b 1%, #31398e 100%);
+	background: -moz-linear-gradient(top, #4e256b 1%, #31398e 100%);
+	background: -o-linear-gradient(top, #4e256b 1%, #31398e 100%);
+	background: -ms-linear-gradient(top, #4e256b 1%, #31398e 100%);
+	background: linear-gradient(top, #4e256b 1%, #31398e 100%); 
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4e256b', endColorstr='#31398e',GradientType=0 );
+}
+.blog{ 
+  background: #2b95a5; 
+  background: -webkit-linear-gradient(top, #2b95a5 2%, #257c8c 100%);
+  background: -moz-linear-gradient(top, #2b95a5 2%, #257c8c 100%);
+	background: -o-linear-gradient(top, #2b95a5 2%, #257c8c 100%);
+	background: -ms-linear-gradient(top, #2b95a5 2%, #257c8c 100%);
+	background: linear-gradient(top, #2b95a5 2%, #257c8c 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2b95a5', endColorstr='#257c8c',GradientType=0 ); 
+}
+
+}//END Accordian 
+
+.logo{ 
+   display: none;
+   position: fixed;
+   bottom: 50%;
+   top: 50%;
+   text-align: center;
+   width: 100%;
+   pointer-events:none;
+    img {  pointer-events:auto;}
+}
+
+.logo.bottom{ 
+   position: fixed;
+   bottom: 0;
+   top: 0;
+   text-align: center;
+   width: 100%;
+}
